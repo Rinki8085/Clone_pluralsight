@@ -1,0 +1,184 @@
+body {
+    font-family: PS TT Commons Roman,Gotham SSm A,Gotham SSm B,Arial,sans-serif;
+    margin: 0;
+    background-color: #0d0f12;
+    color: hsla(0,0%,100%,.95);
+}
+#container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#left{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+}
+@media (min-width: 768px){
+    #left{
+        flex-grow:1;
+        flex-shrink: 1;
+        flex-basis:0px;
+    }
+}
+/* .spacer{
+    flex:1;
+    min-height:48px;
+} */
+.signin {
+    width:100%;
+    flex-direction: column;
+    /* flex: auto; */
+    padding-bottom: 12px;
+ 
+}
+.wrapper{
+    width:100%;
+    padding:0px;
+    margin:0px;
+}
+.logo {
+    margin-bottom: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.logo>img{
+    width:303px;
+    height:60pX;
+}
+label {
+    color: hsla(0,0%,100%,.95);
+    font-size: 16px;
+    /* margin-bottom:10px; */
+}
+#right{
+    width:50%;
+    font-weight: 500;
+    margin-bottom: 4px;
+    height:90vh;
+    background-color:black;
+}
+.signInForm{
+    width:80%;
+    margin:auto;
+}
+.psds-text-input__field {
+    font-weight: 400;
+    height: 40px;
+    width:100%;
+    padding: 8px 16px;
+    color: hsla(0,0%,100%,.95);
+    background: #0d0f12;
+    border: 1px solid hsla(0,0%,100%,.3);
+    margin-bottom:30px;
+}
+.psds-button--appearance-primary{
+    font-size: 16px;
+    letter-spacing: .01em;
+    padding: 0px 16px;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 48px;
+    color: hsla(0,0%,100%,.95);
+    background: #0074ab;
+}
+.links{
+    width:80%;
+    margin:auto;
+    height:auto;
+    text-align:center;
+    padding:10px;
+}
+.links>a{
+    color: #2ea0d6;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.bar{
+    width:80%;
+    flex: auto;
+    border: none;
+    height: 1px;
+    background-color: hsla(0,0%,100%,.15);
+}
+.create-account{
+    width:80%;
+    margin:auto;
+    background: rgba(138,153,168,.25);
+    text-align: center;
+    height:40px;
+    padding:10px;
+}
+.create-account>a{
+    color: hsla(0,0%,100%,.95);
+    text-decoration:none;
+    font-weight:bold;
+    font-size:16px;
+    letter-spacing:0.01em;
+}
+#footer{
+    color: hsla(0,0%,100%,.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    flex: 1;
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    margin-top:10px;
+}
+#footer>div>a{
+    color: hsla(0,0%,100%,.7);
+}
+.banner {
+    background-image: url('https://www.pluralsight.com/content/dam/pluralsight2/login/bg-gtm-2020.png');
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: flex-start;
+    height:85vh;
+}
+.marketting-banner>img{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    max-width: 150px;
+}
+.live-text{
+    width:518px;
+    margin-left:55%;
+    margin-top:10%;
+    height:264px;
+}
+.bytton{
+    width:230px;
+    height:40.66px;
+    margin-left:60%;
+    margin-top:8%;
+    text-align: center;
+    padding:10px;
+    font-size: 14px;
+
+    transition: 0.3s all;
+    border-radius: 2px;
+    background: linear-gradient(to right,#F05A28,#EC008C,#F05A28);
+    color: #fff;
+    text-decoration: none;
+}
+.bytton>a{
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+}

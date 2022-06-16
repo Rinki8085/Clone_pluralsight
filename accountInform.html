@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>buy</title>
+    <link rel="stylesheet" href="../style/accountInform.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head> 
+<body style="background-color:#0D0F12;padding:20px;">
+    <div>
+        <div >
+            <img style="width:164px;height:34px;" src="https://www.pluralsight.com/buy/static/assets/ps_logo.png">
+        </div>
+        <div style="text-align:center;">
+            <img style="width:390px;height:53px;" src="https://i.ibb.co/qRFYsv2/Screenshot-35.png">
+        </div>
+        <div>
+            <a class="back-to-pricing" href="viewPlans.html">< Back to pricing</a>
+        </div>
+        <div class="data-css-account">
+            <main>
+                <div class="heading">
+                    <div class="header-section">
+                        <div class="account-bar">
+                            <div>1</div>
+                            <div style="font-size:24px;">Account details</div>
+                        </div>
+                        <div>Already have an account ? <a href='signIn.html'>Sign in</a></div>   
+                    </div>
+                    <div id="form-section-details">
+                        <div>
+                            <form>
+                                <div class="form-section">
+                                    <div>
+                                        <label for="fname">First name*</label><br>
+                                        <input type="text" id="fName" value=""><br>
+                                        <p id="fname1">Required</p>
+                                        <label for="email">Email*</label><br>
+                                        <input type="email" id="Email" value=""><br>
+                                        <p id="email1">Required</p>
+                                        <label for="email">Country of residence*</label><br>
+                                        <select id="mySelect" onchange="myfun()">
+                                            <option value="">- Select One -</option>
+                                            <option value="afganishtan">Afganishtan</option>
+                                            <option value="Alada Islands">Alada Islands</option>
+                                            <option value="Albania">Albania</option>
+                                            <option value="Algeria">Algeria</option>
+                                            <option value="American Samao">American Samao</option>
+                                            <option value="Andorra">Andorra</option>
+                                            <option value="Anguilla">Anguilla</option>
+                                            <option value="Antarctica">Antarctica</option>
+                                            <option value="Antigua And Barbuda">Antigua And Barbuda</option>
+                                            <option value="Argentina">Argentina</option>
+                                            <option value="Armenia">Armenia</option>
+                                            <option value="Aruba">Aruba</option>
+                                            <option value="Australia">Australia</option>
+                                            <option value="Azerbaijan">Azerbaijan</option>
+                                            <option value="Bahamas">Bahamas</option>
+                                            <option value="Bahrain">Bahrain</option>
+                                            <option value="Bangladesh">Bangladesh</option>
+                                            <option value="India">India</option>
+                                        </select>
+                                        <p id="reside">Required</p>
+                                        <div id="showId">
+                                            <label for="taxId">Tax ID (optional)</label><br>
+                                            <input type="text" id="taxId" value=""><br>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label for="lname">Last name*</label>
+                                        <input type="text" id="Lname" value="">
+                                        <p id="lname1">Required</p>
+                                        <label for="cEmail">Confirm Email*</label>
+                                        <input type="email" id="CEmail" value=""><br>
+                                        <p id="cEmail1">Required</p>
+                                        <label for="cname">Company Name*</label><br>
+                                        <input type="text" id="Cname" value=""><br>
+                                        <p id="cname1">Required</p>
+                                    </div>
+                                </div>
+                                <hr class="bar-hr">
+                                <div>
+                                <label style="margin-top:5px;" id="termsAgree"><input type='checkbox' id="agree">By checking here and continuing, I agree to the <strong>Pluralsight</strong><a href='#'> Terms of Us</a></label>
+                                </div>
+                                <button id="confirm" onclick="confirmData(event)">Continue</button>
+                            </form>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="heading drawer" style="height:auto;">
+                    <div class="header-section">
+                        <div class="account-bar">
+                            <div>2</div>
+                            <div style="font-size:24px;">Payment</div>
+                        </div>
+                        <div></div>   
+                    </div>
+                    <div id="show-payment-type">
+                        <div class="payment-section">
+                            <span>Select a payment method</span><span><a href='#'>Why do we need this for a free trial?</a></a></span>
+                        </div>
+                        <div class="app">
+                            <div class="create-new-payment-method">
+                                <div class="create-new-payment-method-1">
+                                    <div class="radio-button-outer-container">
+                                        <hr class="line-break">
+                                        <div class="radio-button-container" onclick="showPayment()">
+                                            <div class="radio-button-wrapper">
+                                                <label>
+                                                    <div class="radio" ></div>
+                                                    <div class="radio-button-text">Payment Card</div>
+                                                </label>
+                                            </div>
+                                            <div class="right-side-display">
+                                                <div class="credit-card-image-container">
+                                                    <img src="https://app.pluralsight.com/unified-payment-method/static/images/visa.svg" alt="visa">
+                                                </div>
+                                                <div class="credit-card-image-container">
+                                                    <img src="https://app.pluralsight.com/unified-payment-method/static/images/mastercard.svg" alt="master_card">
+                                                </div>
+                                                <div class="credit-card-image-container">
+                                                    <img src="https://app.pluralsight.com/unified-payment-method/static/images/discover.svg" alt="rupay-card">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="payment-form" class="radio-button-drawer">
+                                        <div class="payment-form-section">
+                                            <div class="zura-container">
+                                                <form>
+                                                    <div class="whitespace"></div>
+                                                    <div class="content">
+                                                        <div class="content-form">
+                                                            <label for="creditCardHoldername" class="form-label">Name on card*</label>
+                                                            <div class="form-element">
+                                                                <input type="text" id="CardHolderName" value="">
+                                                            </div>
+                                                            <label for="creditCardExpireMonth" class="form-label">Expiratioon*</label>
+                                                            <div class="creditCardExpiremonth">
+                                                                <div class="form-label-input-pair">
+                                                                    <select class="input-select">
+                                                                        <option value="">- Select One -</option>
+                                                                        <option value="01">01</option>
+                                                                        <option value="02">02</option>
+                                                                        <option value="03">03</option>
+                                                                        <option value="04">04</option>
+                                                                        <option value="05">05</option>
+                                                                        <option value="06">06</option>
+                                                                        <option value="07">07</option>
+                                                                        <option value="08">08</option>
+                                                                        <option value="09">09</option>
+                                                                        <option value="10">10</option>
+                                                                        <option value="11">11</option>
+                                                                        <option value="12">12</option>
+                                                                    </select>
+                                                                </div><span style="font-size:25px;color:white;">/</span>
+                                                                <div class="form-label-input-pair">
+                                                                    <select class="input-select-year">
+                                                                        <option value="">- Select One -</option>
+                                                                        <option value="2021">2021</option>
+                                                                        <option value="2022">2022</option>
+                                                                        <option value="2023">2023</option>
+                                                                        <option value="2024">2024</option>
+                                                                        <option value="2025">2025</option>
+                                                                        <option value="2026">2026</option>
+                                                                        <option value="2027">2027</option>
+                                                                        <option value="2028">2028</option>
+                                                                        <option value="2029">2029</option>
+                                                                        <option value="2030">2030</option>
+                                                                        <option value="2031">2031</option>
+                                                                        <option value="2032">2032</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <label for="Address" class="form-label">Address*</label>
+                                                            <div class="form-element">
+                                                                <input type="text" id="Address" value="">
+                                                            </div>
+                                                            <label for="country" class="form-label">Country*</label>
+                                                            <div class="form-element">
+                                                                <input type="text" id="country" value="">
+                                                            </div>
+                                                            <label for="stateName" class="form-label">State* (No state? Enter 'none'.)</label>
+                                                            <div class="form-element">
+                                                                <input type="text" id="stateName" value="">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <label for="creditCardNumber" class="form-label">Card number*</label>
+                                                            <div class="form-element">
+                                                                <input type="text" id="creditCardNumber" value="">
+                                                            </div>
+                                                            <label for="CVVNumber" class="form-label">CVV*</label>
+                                                            <div class="form-element" id="input-with-image">
+                                                                <input type="text" id="CVVNumber" value="">
+                                                                <img src="https://static.zuora.com/Resources/58230/Images/cvv_logo.png">
+                                                            </div>
+                                                            <label for="cAddress" class="form-label">Address (cont.)</label>
+                                                            <div class="form-element">
+                                                                <input type="text" id="cAddress" value="">
+                                                            </div>
+                                                            <label for="city" class="form-label">City*</label>
+                                                            <div class="form-element">
+                                                                <input type="text" id="city" value="">
+                                                            </div>
+                                                            <label for="pCode" class="form-label">Postal code*</label>
+                                                            <div class="form-element">
+                                                                <input type="text" id="pCode" value="">
+                                                            </div>
+                                                            <!-- https://static.zuora.com/Resources/58230/Images/cvv_logo.png -->
+                                                        </div>
+                                                    </div>
+                                                    <button id="review">Review order</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="create-new-payment-method-1">
+                                    <div  class="radio-button-outer-container">
+                                        <hr class="line-break">
+                                        <div class="radio-button-container" onclick="showPaypal()">
+                                            <div class="radio-button-wrapper">
+                                                <label>
+                                                    <div class="radio"></div>
+                                                    <div class="radio-button-text">
+                                                        <img src="https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg" width="100px" height="24px">
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!-- https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg -->
+                                    </div>
+                                    <div class="button-paypal" id="paypal-form">
+                                        <button id="paypal-btn">PayPal is not supported for this currency. <a href='#'><u>Switch to USD.</u></a></button>
+                                        <p>Don't see your preferred payment method? <a href=''><u>Let us know</u></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="heading">
+                    <div class="header-section">
+                        <div class="account-bar">
+                            <div>3</div>
+                            <div style="font-size:24px;">Review and confirm</div>
+                        </div>
+                        <div><span style="padding-right:10px;">Secore checkout</span><span style="padding-top:-10px;"><img src='https://www.pluralsight.com/buy/static/assets/icon-lock.svg' width='12px' height='17px' alt="checkout"></span></div>   
+                    </div>
+                </div>
+            </main>
+            <aside style="background-color:transparent">
+                <div class="heading" style="height:344px;padding:10px 30px 20px 30px">
+                    <div>
+                        <h3 class="order">Order summary</h3>
+                        <div class="price-cal">
+                            <div>
+                                <h6>Plan</h6>
+                                <div class="trial-price">Individual Standard Free Trial</div>
+                            </div>
+                            <div>
+                                <h6>Price</h6>
+                                <div class="trial-price">FREE</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="calculation">
+                            <div class="sub-total">
+                                <h6 style="width:262px">Subtotal</h6>
+                                <h6 style="width:100px;font-size:16px;color:white">₹0</h6>
+                            </div>
+                            <div class="sub-total">
+                                <h6 style="width:262px">Estimated tax</h6>
+                                <h6 style="width:100px;font-size:16px;color:white">₹0</h6>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="price-cal">
+                            <div>
+                                <div class="trial-price">Total Due Today</div>
+                            </div>
+                            <div>
+                                <div class="trial-price" style="text-align:right">₹0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="margin-top:20px;font-size:10px;color:rgba(255, 255, 255, 0.65)">✝ Pluralsight is required by law to collect transaction taxes such as sales tax, VAT, GST or other similar taxes on purchases in some jurisdictions. The actual tax amount will be calculated based on the applicable jurisdictional tax rates when your order is processed.</div>
+                    <div style="margin-top:30px;font-size:10px;color:rgba(255, 255, 255, 0.65)">✝✝ Excluding transaction taxes such as sales tax, VAT, GST and other similar taxes</div>
+                </div>
+            </aside>
+        </div>
+        <footer>
+            <ul class="footer-section-log">
+                <li>Copyright © 2004-</a></li>
+                <li><a href='https://www.pluralsight.com/privacy'>Privacy Policy</a></li>
+                <li><a href="http://www.pluralsight.com/terms">Terms of Use</a></li>
+            </ul>
+        </footer>
+    </div> 
+</body>
+</html>
+<!-- <img src="https://i.ibb.co/qRFYsv2/Screenshot-35.png"> -->
+<script src="../script/accountInform.js"></script>

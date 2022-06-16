@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Sign In | Pluralsight</title>
+    <!-- <link rel="stylesheet" href="../style/style.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/viewPlans.css">
+</head>
+<body style="background:#181818;color:#222;cursor:auto;
+font-style: normal;
+font-weight: normal;
+line-height: 1.5;
+font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal !important;">
+    <div>
+        <div id="navbar">
+            <div class="ps-nav-brand">
+                <a href="index.html" class="ps-nav-logo"></a>
+            </div>
+            <div class="ps-nav-global-links">
+                <ul class="ps-nav-global-main">
+                    <li class="primary-link" onclick="showPlatforms()">
+                        <a href="#" id="show-nav-1">Platforms<span><i class='fas fa-angle-down' id="showNav1" style='color:white;'></i></span></a>
+                        <div class="header-dropdown" id="showNav">
+                            <div class="close-button" onclick="closeShowPlatforms()">X</div>
+                            <div class="nav-browse-container">
+                                <div class="nav-browse-inner" style="width:300px;">
+                                    <div class="nav-browse-section">
+                                        <div class="nav-header--label">Ways to upskill</div>
+                                        <ul class="browse-primary">
+                                            <li>
+                                                <a href="#">
+                                                    <span><img src="https://i.ibb.co/M1SXJWP/dashboard.png" alt="dashboard"></span> Course
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span><img src="https://i.ibb.co/1sz0tBJ/iq.png" alt="iq"></span> Labs
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span><img src="https://i.ibb.co/c1N4TQj/cloud.png" alt="cloud"></span> Certification prep
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span><img src="https://i.ibb.co/pnzxPkz/hand.png" alt="hand"></span> Hands-on learning
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span><img src="https://i.ibb.co/wSqvsYq/certifications.png" alt="certifications"></span> Certification prep
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span><img src="https://i.ibb.co/Vq6Lk5r/analytics.png" alt="analytics"></span> Team efficiency
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="nav-browse-inner" style="padding:20px;padding-top:40px;">
+                                    <div class="nav-header-section" style="margin-right:20px;">
+                                        <div class="nav-header--label">Skills For</div>
+                                        <ul class="browse-secondary browse-primary">
+                                            <li><a href="#">Software developer</a></li>
+                                            <li><a href="#">IT ops</a></li>
+                                            <li><a>Info & cyber security</a></li>
+                                            <li><a href='#'>Cloud computing</a></li>
+                                            <li><a href='#'>Machine learning /AI</a></li>
+                                            <li><a href='#'>Data professional</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-header-section" style="height:213px;width:500px">
+                                        <div class="nav-header--label">Top Trending Paths</div>
+                                        <div id="pathContent" class="clearfix">
+                                            <div id="path-list-target">
+                                                <div class="path-list-page">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <div class="item-each">
+                                                                <div class="item-image">
+                                                                    <img src="https://pluralsight2.imgix.net/paths/images/group-policy-administration-ee0dacafe8.png?w=75">
+                                                                </div>
+                                                                <div class="item-text">
+                                                                    <div class="course-item__title">
+                                                                        Microsfot Azure Development
+                                                                    </div>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span>4 </span>Courses
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>7 </span>Hourse
+                                                                        </li>
+                                                                        <li>
+                                                                            <img src="https://i.ibb.co/1sz0tBJ/iq.png" alt="iq">
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <div class="item-each">
+                                                                <div class="item-image">
+                                                                    <img src="https://pluralsight2.imgix.net/paths/images/group-policy-administration-ee0dacafe8.png?w=75">
+                                                                </div>
+                                                                <div class="item-text">
+                                                                    <div class="course-item__title">
+                                                                        Microsfot Azure Development
+                                                                    </div>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span>4 </span>Courses
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>7 </span>Hourse
+                                                                        </li>
+                                                                        <li>
+                                                                            <img src="https://i.ibb.co/1sz0tBJ/iq.png" alt="iq">
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <div class="item-each">
+                                                                <div class="item-image">
+                                                                    <img src="https://pluralsight2.imgix.net/paths/images/group-policy-administration-ee0dacafe8.png?w=75">
+                                                                </div>
+                                                                <div class="item-text">
+                                                                    <div class="course-item__title">
+                                                                        Microsfot Azure Development
+                                                                    </div>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span>4 </span>Courses
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>7 </span>Hourse
+                                                                        </li>
+                                                                        <li>
+                                                                            <img src="https://i.ibb.co/1sz0tBJ/iq.png" alt="iq">
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <div class="item-each">
+                                                                <div class="item-image">
+                                                                    <img src="https://pluralsight2.imgix.net/paths/images/group-policy-administration-ee0dacafe8.png?w=75">
+                                                                </div>
+                                                                <div class="item-text">
+                                                                    <div class="course-item__title">
+                                                                        Microsfot Azure Development
+                                                                    </div>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span>4 </span>Courses
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>7 </span>Hourse
+                                                                        </li>
+                                                                        <li>
+                                                                            <img src="https://i.ibb.co/1sz0tBJ/iq.png" alt="iq">
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <div class="item-each">
+                                                                <div class="item-image">
+                                                                    <img src="https://pluralsight2.imgix.net/paths/images/group-policy-administration-ee0dacafe8.png?w=75">
+                                                                </div>
+                                                                <div class="item-text">
+                                                                    <div class="course-item__title">
+                                                                        Microsfot Azure Development
+                                                                    </div>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span>4 </span>Courses
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>7 </span>Hourse
+                                                                        </li>
+                                                                        <li>
+                                                                            <img src="https://i.ibb.co/1sz0tBJ/iq.png" alt="iq">
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="primary-link" onclick="showProduct()">
+                        <a href="#">Products<span> <i class='fas fa-angle-down' style='color:white'></i></span></a>
+                        <div class="header-dropdown" style="width:576px;height:232px;" id="showProduct">
+                            <div class="nav-products-container">
+                                <div class="close-button" onclick="hideProduct()">X</div>
+                                <div class="nav-product-list">
+                                    <div class="nav-product">
+                                        <div class="nav-product-inner" style="padding-right:20px;border-right:1px solid #363638">
+                                            <div class="product-link">
+                                                <a href="#">
+                                                  <img src="https://i.ibb.co/QKZYWTg/logo-skills.png" alt="logo-skills">
+                                                </a>
+                                                <p>Build tech skills to drive results</p>
+                                            </div>
+                                            <hr class="nav-product-hr">
+                                            <ul class="nav-product-link-list">
+                                                <li class="nav-product-link-item">
+                                                    <a href="#">What is skills?</a>
+                                                </li>
+                                                <li class="nav-product-link-item">
+                                                    <a href="#">View plans</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="nav-product">
+                                        <div class="nav-product-inner" style="padding-left:20px;">
+                                            <div class="product-link">
+                                                <a href="#">
+                                                    <img src="https://i.ibb.co/RPpYf1T/logo-flow.png" alt="logo-flow">
+                                                </a>
+                                                <p>Get insights into your workflow</p>
+                                            </div>
+                                            <hr class="nav-product-hr">
+                                            <ul class="nav-product-link-list">
+                                                <li class="nav-product-link-item">
+                                                    <a href="#">What is Flow?</a>
+                                                </li>
+                                                <li class="nav-product-link-item">
+                                                    <a href="#">View plans</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="primary-link" onclick="showResource()">
+                        <a href="#">Resources<span> <i class='fas fa-angle-down' style='color:white'></i></span></a>
+                        <div class="header-dropdown" id="Resources">
+                            <div class="close-button">X</div>
+                            <div class="nav-resource-container">
+                                <div class="nav-resource-inner">
+                                    <div class="nav-resource-section"  style="padding-right:30px;">
+                                        <div class="nav-header--label">LEARN</div>
+                                        <ul class="resource-primary">
+                                           <li><a href='#'>Blog</a></li>
+                                           <li><a href='#'>Customer stories</a></li>
+                                           <li><a href='#'>Resource center</a></li>
+                                           <li><a href='#'>Guides</a></li>
+                                           <li><a href='#'>App download</a></li>
+                                           <li><a href='#'>Support</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-resource-section">
+                                        <div class="nav-header--label">CONNECT</div>
+                                        <ul class="resource-secondary">
+                                            <li style="padding-top:5px;">
+                                                <a href="#">Events</a>
+                                            </li>
+                                            <li style="padding-top:5px;">
+                                                <a href="#">Webinars</a>
+                                            </li>
+                                            <li style="padding-top:5px;">
+                                                <a href="#">Podcast</a>
+                                            </li>
+                                        </ul>
+                                        <div class="nav-header--label" style="padding-top:20px;">PODCAST</div>
+                                        <ul class="resource-secondary">
+                                            <li style="padding-top:5px;"><a href="#">All hands on tech</a></li>
+                                            <li style="padding-top:5px;"><a href='#'>Perspectives in Leadership</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="nav-resource-inner" id='resource-nav'>
+                                    <div class="generic-block-wrapper-image" style="padding-left:20px;">
+                                        <div class="heading">
+                                            <h2>2022 Tech<br> Forecast and<br>
+                                            Build Better<br> Blueprint
+                                            </h2>
+                                        </div>
+                                        <div class="paragraph">
+                                            Prepare for shifts and<br> trends in the industry
+                                        </div>
+                                        <div class="Button-pre">
+                                            <a href="#">CHECK IT OUT</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="primary-link">
+                        <a href="#">For Individuals<span></span></a>
+                    </li>
+                </ul>
+                <ul class="ps-nav-global-util" >
+                    <li class="ps-nav-button" style="border:1px solid white;width:140px;height:40px;padding-left:10px;padding-top:3px;box-sizing:border-box;">
+                        <a href="#" class="button-secondary-white">Try for free</a>
+                    </li>
+                    <li class="ps-nav-search">
+                        <a href="#" class="ps-nav-primary">
+                            <i class="fa fa-search" style="color:white;font-size:24px;"></i>
+                        </a>
+                    </li>
+                    <li class="ps-nav-contact">
+                        <a href="#">
+                            <i class="fa fa-phone" style="color:white;font-size:24px;"></i>
+                        </a>
+                    </li>
+                    <li></li>
+                    <!-- sign section -->
+                    <li class="primary-link" onclick="showSign()">
+                        <a href="index.html" class="ps-nav-signIn">
+                            Sign in
+                            <span><i class='fas fa-angle-down' style='color:white;'></i></span>
+                            <div class="signIn-dropdown" id="signIn">
+                                <div class="nav-sign section">
+                                    <div class="close-button">X</div>
+                                    <div class="nav-signin-list">
+                                        <div class="nav-signin-item">
+                                            <div class="nav-header--label">SIGN IN WITH</div>
+                                            <img style="height:21px" src="https://i.ibb.co/QKZYWTg/logo-skills.png" alt="logo-skills">
+                                        </div>
+                                  
+                                        <div class="nav-signin-item">
+                                            <div class="nav-header--label">SIGN IN WITH</div>
+                                            <img style="height:21px" src="https://i.ibb.co/RPpYf1T/logo-flow.png" alt="logo-skills">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="generic-block-1">
+            <div class="image-section">
+                <img src="https://i.ibb.co/QKZYWTg/logo-skills.png">
+            </div>
+            <div class="text-section" style="margin-bottom:60px;">
+                <h1>Plans & Pricing</h1>
+            </div>
+            <div class="pricing-plans">
+                <div class="pricing-plans-section">
+                    <div class="pricing-plan--switcher">
+                        <div class="fieldset">
+                            <input type="radio" id="individual" name="type1" value="plans_individual">
+                            <label for="individual" style="color:white;">individual</label>
+                            <input type="radio" id="business" name="type1" value="plan_business">
+                            <label class="business" for="business" style="margin-left:50px;color:rgb(255,255,255,0.7);">Team</label>
+                            <span class="switch"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-pricing-block">
+                <div class="pricing-wrapper">
+                    <div class="toggle-container" style="position:relative;margin-top:50px;">
+                        <span style="color:white;">Monthly</span>
+                        <span>
+                            <input style="display:none;" type="checkbox" name="toggle" id="toggle" checked="checked" autocomplete="off">
+                            <label for="toggle" id="label">
+                                <div class="ball"></div>
+                            </label>
+                        </span>
+                        <span>
+                            <span style="color:white;">Yearly</span>
+                            <div class="pricing_save" style="visibility:visible">(Save at least 31%)</div>
+                        </span>
+                    </div>
+                    <div class="pricing_flex-container">
+                         <div class="pricing_section shadow">
+                            <div class="pricing_display">
+                                <h2 style="color:white;">Standard</h2>
+                                <div class="pricing-annual">
+                                    <div class="pricing_price">
+                                        <!-- ₹ -->
+                                        <div class="api-price-styling">
+                                            <span class="curr-symbol">₹</span>&nbsp;
+                                            <span class="curr-major">12,299</span>
+                                        </div>
+                                        <div class="pricing_term">per year</div>
+                                    </div>
+                                </div>
+                                <div class="pricing_highlight">
+                                    Core course library,<br>
+                                    paths and skill assessments.
+                                </div>
+                                <div class="show-for-large-up">
+                                    <a href="#" class="button--gradient">
+                                        START WITH STANDARD
+                                    </a>
+                                </div>
+                                <div class="pricing_trial">
+                                    or start a <a href="accountInform.html"> FREE Trial</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing_section premium-savings">
+                            <div class="pricing_display">
+                                <h2 style="color:white;">Premium</h2>
+                                <div class="pricing-annual">
+                                    <div class="pricing_price">
+                                        <!-- ₹ -->
+                                        <div class="api-price-styling">
+                                            <span class="curr-symbol">₹</span>&nbsp;
+                                            <span class="curr-major">18,399</span>
+                                        </div>
+                                        <div class="pricing_term">per year</div>
+                                    </div>
+                                </div>
+                                <div class="pricing_highlight">
+                                    Entire library of core and expanded courses, exams,<br> projects and interactive courses.
+                                </div>
+                                <div class="show-for-large-up">
+                                    <a href="#" class="button--gradient">
+                                        START WITH PREMIUM
+                                    </a>
+                                </div>
+                                <div class="pricing_trial">
+                                    or start a <a href="accountInform.html"> FREE Trial</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-wrapper"></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="generic-block">
+                <div class="generic-block-wrapper">
+                    <div class="title--2">
+                        <h3 class="title--center">Compare our course libraries</h3>
+                    </div>
+                    <div class="container-columns">
+                        <div>
+                            <div class="title-2-1">
+                                Core library
+                            </div>
+                            <div class="text-4">
+                                Our core library features 2,500+ of our most-popular courses on in-demand topics like cloud, data, security, software development, infrastructure and more.
+                            </div>
+                        </div>
+                        <div>
+                            <div class="title-2-1">
+                                Expanded library
+                            </div>
+                            <div class="text-4">
+                                Our expanded library gives you access to our full 7,000+ course library. It includes more advanced topics if you need to build deep expertise and niche topics for those tackling special projects.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="generic-block">
+                <div class="generic-block_wrapper">
+                    <table style="width:100%;" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr class="tr-feature">
+                                <td style="width:320px">&nbsp;</td>
+                                <td class="td-groupB" colspan="2">
+                                    <div class="td-group">
+                                        Individual
+                                    </div>
+                                </td>
+                                <td style="width:551px;color:deeppink;" class="td-groupB" colspan="3">
+                                    <div class="td-group">
+                                        Team
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tr-feature">
+                                <td class="table-plan table--feature">CORE</td>
+                                <td class="table-plan">Standard</td>
+                                <td class="table-plan">Premium</td>
+                                <td class="table-plan">Starter</td>
+                                <td class="table-plan">Professional</td>
+                                <td class="table-plan">Enterprise</td>
+                            </tr>
+                            <tr class="alt-row">
+                               <td>Free trial</td>
+                               <td style="font-size:15px !important;text-align: center;border-right:2px solid #333333"><strong>For 10 days</strong></td>
+                               <td style="font-size:15px !important;text-align: center;border-right:2px solid #333333"><strong>For 10 days</strong></td>
+                               <td style="font-size:15px !important;text-align: center;border-right:2px solid #333333"><strong>n/a</strong></td>
+                               <td style="font-size:15px !important;text-align: center;border-right:2px solid #333333"><strong>For 14 days</strong></td>
+                               <td style="font-size:15px !important;text-align: center"><strong>For 14 days</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="td-group3" style="width:320px;text-align:left;font-weight:normal;">
+                                    Course library
+                                    <a class="tooltip-wrapper" href="#">
+                                        <div class="tooltip_wrapper--circle"></div>
+                                        <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                    </a>
+                                </td>
+                                <td class="td-group3" style="border-right:2px solid #333333">
+                                    Core library
+                                    <a class="tooltip-wrapper" href="#">
+                                        <div class="tooltip_wrapper--circle"></div>
+                                        <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                    </a>
+                                </td>
+                                <td class="td-group3" style="border-right:2px solid #333333">
+                                    Expanded library
+                                    <a class="tooltip-wrapper" href="#">
+                                        <div class="tooltip_wrapper--circle"></div>
+                                        <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                    </a>
+                                </td>
+                                <td class="td-group3" style="border-right:2px solid #333333">
+                                    Core library
+                                    <a class="tooltip-wrapper" href="#">
+                                        <div class="tooltip_wrapper--circle"></div>
+                                        <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                    </a>
+                                </td>
+                                <td class="td-group3" style="border-right:2px solid #333333">
+                                    Expanded library
+                                    <a class="tooltip-wrapper" href="#">
+                                        <div class="tooltip_wrapper--circle"></div>
+                                        <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                    </a>
+                                </td>
+                                <td class="td-group3">
+                                    Expanded library
+                                    <a class="tooltip-wrapper" href="#">
+                                        <div class="tooltip_wrapper--circle"></div>
+                                        <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="alt-row">
+                                <td class="td-group3" style="width:320px;text-align:left;font-weight:normal;">
+                                    Paths
+                                    <a class="tooltip-wrapper" href="#">
+                                        <div class="tooltip_wrapper--circle"></div>
+                                        <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                    </a>
+                                </td>
+                                <td class="td-group4" style="color:#F7A616;border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="color:#F7A616;border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="border-right:2px solid #333333"><i class="material-icons">check</i></td>
+                                <td class="td-group4" style="border-right:2px solid #333333"><i class="material-icons">check</i></td>
+                                <td class="td-group4"><i class="material-icons">check</i></td>
+                            </tr>
+                            <tr>
+                                <td class="td-group3" style="width:320px;text-align:left;font-weight:normal;">
+                                    Channels
+                                    <a class="tooltip-wrapper" href="#">
+                                        <div class="tooltip_wrapper--circle"></div>
+                                        <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                    </a>
+                                </td>
+                                <td class="td-group4" style="color:#F7A616;border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="color:#F7A616;border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4">
+                                    <i class="material-icons">check</i>
+                                </td>
+                            </tr>
+                            <tr class="alt-row">
+                                <td class="td-group3" style="width:320px;text-align:left;font-weight:normal;">
+                                    Course discussing
+                                    <a class="tooltip-wrapper" href="#">
+                                        <div class="tooltip_wrapper--circle"></div>
+                                        <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                    </a>
+                                </td>
+                                <td class="td-group4" style="color:#F7A616;border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="color:#F7A616;border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="border-right:2px solid #333333"><i class="material-icons">check</i></td>
+                                <td class="td-group4" style="border-right:2px solid #333333"><i class="material-icons">check</i></td>
+                                <td class="td-group4"><i class="material-icons">check</i></td>
+                            </tr>
+                            <tr>
+                                <td class="td-group3" style="width:320px;text-align:left;font-weight:normal;">
+                                    Exercise files
+                                    <a class="tooltip-wrapper" href="#">
+                                        <div class="tooltip_wrapper--circle"></div>
+                                        <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                    </a>
+                                </td>
+                                <td class="td-group4" style="color:#F7A616;border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="color:#F7A616;border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="border-right:2px solid #333333">
+                                    <i class="material-icons" >check</i>
+                                </td>
+                                <td class="td-group4" style="border-right:2px solid #333333">
+                                    <i class="material-icons" >check</i>
+                                </td>
+                                <td class="td-group4">
+                                    <i class="material-icons">check</i>
+                                </td>
+                            </tr>
+                            <tr class="alt-row">
+                                <td class="td-group3" style="width:320px;text-align:left;font-weight:normal;">
+                                    Mobile and TV apps
+                                    <a class="tooltip-wrapper" href="#">
+                                        <div class="tooltip_wrapper--circle"></div>
+                                        <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                    </a>
+                                </td>
+                                <td class="td-group4" style="color:#F7A616;border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="color:#F7A616;border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="border-right:2px solid #333333"><i class="material-icons">check</i></td>
+                                <td class="td-group4" style="border-right:2px solid #333333"><i class="material-icons">check</i></td>
+                                <td class="td-group4"><i class="material-icons">check</i></td>
+                            </tr>
+                            <tr>
+                                <td class="td-group3" style="width:320px;text-align:left;font-weight:normal;">
+                                    Offline viewing
+                                    <a class="tooltip-wrapper" href="#">
+                                        <div class="tooltip_wrapper--circle"></div>
+                                        <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                    </a>
+                                </td>
+                                <td class="td-group4" style="color:#F7A616;border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="color:#F7A616;border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                            </tr>
+                            <tr class="alt-row">
+                                <td class="td-group3" style="width:320px;text-align:left;font-weight:normal;">
+                                    Confrences
+                                    <a class="tooltip-wrapper" href="#">
+                                        <div class="tooltip_wrapper--circle"></div>
+                                        <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                    </a>
+                                </td>
+                                <td class="td-group4" style="color:#F7A616;border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="color:#F7A616;border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="border-right:2px solid #333333"><i class="material-icons">check</i></td>
+                                <td class="td-group4" style="border-right:2px solid #333333"><i class="material-icons">check</i></td>
+                                <td class="td-group4"><i class="material-icons">check</i></td>
+                            </tr>
+                            <tr>
+                                <td class="td-group3" style="width:320px;text-align:left;font-weight:normal; ">
+                                    Guides
+                                    <a class="tooltip-wrapper" href="#">
+                                        <div class="tooltip_wrapper--circle"></div>
+                                        <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                    </a>
+                                </td>
+                                <td class="td-group4" style="color:#F7A616;border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="color:#F7A616;border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4">
+                                    <i class="material-icons">check</i>
+                                </td>
+                            </tr>
+                            <tr class="alt-row">
+                                <td class="td-group3" style="width:320px;text-align:left;font-weight:normal;">
+                                    Badges
+                                    <a class="tooltip-wrapper" href="#">
+                                        <div class="tooltip_wrapper--circle"></div>
+                                        <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                    </a>
+                                </td>
+                                <td class="td-group4" style="color:#F7A616;border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="color:#F7A616;border-right:2px solid #333333">
+                                    <i class="material-icons">check</i>
+                                </td>
+                                <td class="td-group4" style="border-right:2px solid #333333"><i class="material-icons">check</i></td>
+                                <td class="td-group4" style="border-right:2px solid #333333"><i class="material-icons">check</i></td>
+                                <td class="td-group4"><i class="material-icons">check</i></td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                    <div class="title-assess">
+                        <p style="padding-left:20px;">Assessment</p>
+                        <table style="width:100%;" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td class="td-group3" style="width:320px;text-align:left;font-weight:bold; ">
+                                        Skill IQ
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4" style="color:#F7A616;border-right:1px solid #333333">
+                                        <i class="material-icons">check</i>
+                                    </td>
+                                    <td class="td-group4" style="color:#F7A616;border-right:1px solid #333333">
+                                        <i class="material-icons">check</i>
+                                    </td>
+                                    <td class="td-group4" style="border-right:2px solid #333333">
+                                        <i class="material-icons">check</i>
+                                    </td>
+                                    <td class="td-group4" style="border-right:2px solid #333333">
+                                        <i class="material-icons">check</i>
+                                    </td>
+                                    <td class="td-group4">
+                                        <i class="material-icons">check</i>
+                                    </td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="td-group3" style="width:320px;text-align:left;font-weight:bold;">
+                                        Role IQ
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4" style="color:#F7A616;border-right:1px solid #333333">
+                                        <i class="material-icons">check</i>
+                                    </td>
+                                    <td class="td-group4" style="color:#F7A616;border-right:1px solid #333333">
+                                        <i class="material-icons">check</i>
+                                    </td>
+                                    <td class="td-group4" style="border-right:2px solid #333333"><i class="material-icons">check</i></td>
+                                    <td class="td-group4" style="border-right:2px solid #333333"><i class="material-icons">check</i></td>
+                                    <td class="td-group4"><i class="material-icons">check</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-group3" style="width:320px;text-align:left;font-weight:bold; ">
+                                        Course learning checks
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4" style="color:#F7A616;border-right:1px solid #333333">
+                                        <i class="material-icons">check</i>
+                                    </td>
+                                    <td class="td-group4" style="color:#F7A616;border-right:1px solid #333333">
+                                        <i class="material-icons">check</i>
+                                    </td>
+                                    <td class="td-group4" style="border-right:2px solid #333333">
+                                        <i class="material-icons">check</i>
+                                    </td>
+                                    <td class="td-group4" style="border-right:2px solid #333333">
+                                        <i class="material-icons">check</i>
+                                    </td>
+                                    <td class="td-group4">
+                                        <i class="material-icons">check</i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="title-assess">
+                        <p style="padding-left:20px;">PREMIUM</p>
+                        <table style="width:100%;" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr class="alt-row">
+                                    <td class="td-group3" style="width:320px;text-align:left;font-weight:bold;">
+                                        Certification practice exams
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4" style="color:#F7A616;border-right:1px solid #333333">
+                                        
+                                    </td>
+                                    <td class="td-group4" style="color:#F7A616;border-right:1px solid #333333">
+                                        <i class="material-icons">check</i>
+                                    </td>
+                                    <td class="td-group4" style="border-right:2px solid #333333"></td>
+                                    <td class="td-group4" style="border-right:2px solid #333333"><i class="material-icons">check</i></td>
+                                    <td class="td-group4"><i class="material-icons">check</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-group3" style="width:320px;text-align:left;font-weight:bold; ">
+                                        Interactive courses
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4" style="color:#F7A616;border-right:1px solid #333333">
+                                        
+                                    </td>
+                                    <td class="td-group4" style="color:#F7A616;border-right:1px solid #333333">
+                                        <i class="material-icons">check</i>
+                                    </td>
+                                    <td class="td-group4" style="border-right:2px solid #333333">
+                                       
+                                    </td>
+                                    <td class="td-group4" style="border-right:2px solid #333333">
+                                        <i class="material-icons">check</i>
+                                    </td>
+                                    <td class="td-group4">
+                                        <i class="material-icons">check</i>
+                                    </td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="td-group3" style="width:320px;text-align:left;font-weight:bold;">
+                                        Projects
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4" style="color:#F7A616;width:180px;border-right:1px solid #333333">
+                                        
+                                    </td>
+                                    <td class="td-group4" style="color:#F7A616;border-right:1px solid #333333">
+                                        <i class="material-icons">check</i>
+                                    </td>
+                                    <td class="td-group4" style="width:180px;border-right:1px solid #333333"></td>
+                                    <td class="td-group4" style="border-right:2px solid #333333"><i class="material-icons">check</i></td>
+                                    <td class="td-group4" ><i class="material-icons">check</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-group3" style="width:320px;text-align:left;font-weight:bold; ">
+                                        Labs
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4" style="color:#F7A616;border-right:1px solid #333333">
+                                        
+                                    </td>
+                                    <td class="td-group4" style="color:#F7A616;border-right:1px solid #333333">
+                                       
+                                    </td>
+                                    <td class="td-group4" style="width:180px;border-right:1px solid #333333"><i style="color:white;font-size:24px;" class="fa fa-phone" aria-hidden="true"></i></td>
+                                    <td class="td-group4"  style="width:180px;border-right:1px solid #333333"><i style="color:white;font-size:24px;" class="fa fa-phone" aria-hidden="true"></i></td>
+                                    <td class="td-group4"  style="width:180px;"><i style="color:white;font-size:24px;" class="fa fa-phone" aria-hidden="true"></i></td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="td-group3" style="width:320px;text-align:left;font-weight:bold;">
+                                       Sandboxes
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4" style="color:#F7A616;width:180px;border-right:1px solid #333333">
+                                        
+                                    </td>
+                                    <td class="td-group4" style="color:#F7A616;border-right:1px solid #333333">
+                                      
+                                    </td>
+                                    <td class="td-group4" style="width:180px;border-right:1px solid #333333"><i style="color:white;font-size:24px;" class="fa fa-phone" aria-hidden="true"></i></td>
+                                    <td class="td-group4"  style="width:180px;border-right:1px solid #333333"><i style="color:white;font-size:24px;" class="fa fa-phone" aria-hidden="true"></i></td>
+                                    <td class="td-group4"  style="width:180px;border-right:1px solid #333333"><i style="color:white;font-size:24px;" class="fa fa-phone" aria-hidden="true"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-group3" style="width:320px;text-align:left;font-weight:bold;">
+                                        Q&A
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4" style="color:#F7A616;width:180px;border-right:1px solid #333333">
+                                        
+                                    </td>
+                                    <td class="td-group4" style="color:#F7A616;border-right:1px solid #333333">
+                                        
+                                    </td>
+                                    <td class="td-group4" style="width:180px;border-right:1px solid #333333"></td>
+                                    <td class="td-group4" style="border-right:1px solid #333333"></td>
+                                    <td class="td-group4"><i class="material-icons">check</i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="title-assess">
+                        <p style="padding-left:20px;"> ANALYTICS</p>
+                        <table style="width:100%;" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr class="alt-row">
+                                    <td class="td-group3" style="width:320px;text-align:left;font-weight:bold;">
+                                        API Access
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:#F7A616;">
+                                        
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:#F7A616;">
+                                        
+                                    </td>
+                                    <td class="td-group4 table-border"><i class="material-icons">check</i></td>
+                                    <td class="td-group4 table-border"><i class="material-icons">check</i></td>
+                                    <td class="td-group4"><i class="material-icons">check</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-group3" style="width:320px;text-align:left;font-weight:bold; ">
+                                        Trend analytics
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:#F7A616;">
+                                        
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:#F7A616;">
+                                        
+                                    </td>
+                                    <td class="td-group4 table-border">
+                                        <i class="material-icons">check</i>
+                                    </td>
+                                    <td class="td-group4 table-border">
+                                        <i class="material-icons">check</i>
+                                    </td>
+                                    <td class="td-group4">
+                                        <i class="material-icons">check</i>
+                                    </td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="td-group3" style="width:320px;text-align:left;font-weight:bold;">
+                                        Usage analytics
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:#F7A616;width:180px;">
+                                        
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:#F7A616;">
+                                        
+                                    </td>
+                                    <td class="td-group4 table-border" style="width:180px;"><i class="material-icons">check</i></td>
+                                    <td class="td-group4 table-border"><i class="material-icons">check</i></td>
+                                    <td class="td-group4"><i class="material-icons">check</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-group3" style="width:320px;text-align:left;font-weight:bold; ">
+                                        Skills analytics
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:#F7A616;">
+                                        
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:#F7A616;">
+                                       
+                                    </td>
+                                    <td class="td-group4 table-border">
+                                       
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:white;font-weight:normal;width:180px;">
+                                        Basic
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4" style="color:white;font-weight:normal;width:180px;">
+                                        Advanced
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="td-group3" style="width:320px;text-align:left;font-weight:bold;">
+                                       Roles analytics
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:#F7A616;width:180px;">
+                                        
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:#F7A616;width:180px;">
+                                      
+                                    </td>
+                                    <td class="td-group4 table-border" style="width:180px;"></td>
+                                    <td class="td-group4 table-border" style="color:white;font-weight:normal;">
+                                        Basic
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4" style="color:white;font-weight:normal;">
+                                        Advanced
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-group3" style="width:320px;text-align:left;font-weight:bold; ">
+                                       Channels analytics
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:#F7A616;">
+                                        
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:#F7A616;">
+                                        
+                                    </td>
+                                    <td class="td-group4 table-border">
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:white;font-weight:normal;width:180px;">
+                                        Basic
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4" style="color:white;font-weight:normal;width:180px;">
+                                        Advanced
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="title-assess">
+                        <p style="padding-left:20px;"> STRATEGIC</p>
+                        <table style="width:100%;" cellspacing="0" cellpadding="0">
+                            <tr class="alt-row">
+                                <td class="td-group3" style="width:320px;text-align:left;font-weight:bold;">
+                                    Role customization
+                                    <a class="tooltip-wrapper" href="#">
+                                        <div class="tooltip_wrapper--circle"></div>
+                                        <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                    </a>
+                                </td>
+                                <td class="td-group4 table-border" style="color:#F7A616;width:180px;">
+                                    
+                                </td>
+                                <td class="td-group4 table-border" style="color:#F7A616;width:180px;">
+                                    
+                                </td>
+                                <td class="td-group4 table-border" style="width:180px;"></td>
+                                <td class="td-group4 table-border" style="width:180px;"></td>
+                                <td class="td-group4"><i class="material-icons">check</i></td>
+                            </tr>
+                            <tr>
+                                <td class="td-group3" style="width:320px;text-align:left;font-weight:bold;">
+                                    Priorities
+                                    <a class="tooltip-wrapper" href="#">
+                                        <div class="tooltip_wrapper--circle"></div>
+                                        <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                    </a>
+                                </td>
+                                <td class="td-group4 table-border" style="color:#F7A616;width:180px;">
+                                    
+                                </td>
+                                <td class="td-group4 table-border" style="color:#F7A616;">
+                                    
+                                </td>
+                                <td class="td-group4 table-border" style="width:180px;"></td>
+                                <td class="td-group4 table-border" style="width:180px;"></td>
+                                <td class="td-group4"><i class="material-icons">check</i></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="title-assess">
+                        <p style="padding-left:20px;">PROFESSIONAL SERVICES</p>
+                        <table style="width:100%" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr class="alt-row">
+                                    <td class="td-group3" style="width:320px;text-align:left;font-weight:bold; ">
+                                        Onboarding
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:#F7A616;">
+                                        
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:#F7A616;">
+                                       
+                                    </td>
+                                    <td class="td-group4 table-border" style="width:180px;"><i style="color:white;font-size:24px;" class="fa fa-phone" aria-hidden="true"></i></td>
+                                    <td class="td-group4 table-border"  style="width:180px;"><i style="color:white;font-size:24px;" class="fa fa-phone" aria-hidden="true"></i></td>
+                                    <td class="td-group4"  style="width:180px;"><i style="color:white;font-size:24px;" class="fa fa-phone" aria-hidden="true"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-group3" style="width:320px;text-align:left;font-weight:bold; ">
+                                        Skills Strategy Plans
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:#F7A616;">
+                                        
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:#F7A616;">
+                                       
+                                    </td>
+                                    <td class="td-group4 table-border" style="width:180px;"><i style="color:white;font-size:24px;" class="fa fa-phone" aria-hidden="true"></i></td>
+                                    <td class="td-group4 table-border"  style="width:180px;"><i style="color:white;font-size:24px;" class="fa fa-phone" aria-hidden="true"></i></td>
+                                    <td class="td-group4"  style="width:180px;"><i style="color:white;font-size:24px;" class="fa fa-phone" aria-hidden="true"></i></td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="td-group3" style="width:320px;text-align:left;font-weight:bold; ">
+                                        Data export
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:#F7A616;">
+                                        
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:#F7A616;">
+                                       
+                                    </td>
+                                    <td class="td-group4 table-border" style="width:180px;"><i style="color:white;font-size:24px;" class="fa fa-phone" aria-hidden="true"></i></td>
+                                    <td class="td-group4 table-border"  style="width:180px;"><i style="color:white;font-size:24px;" class="fa fa-phone" aria-hidden="true"></i></td>
+                                    <td class="td-group4"  style="width:180px;"><i style="color:white;font-size:24px;" class="fa fa-phone" aria-hidden="true"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-group3" style="width:320px;text-align:left;font-weight:bold; ">
+                                        Single sign-on(SSO)
+                                        <a class="tooltip-wrapper" href="#">
+                                            <div class="tooltip_wrapper--circle"></div>
+                                            <span class="tooltip_wrapper--desc">Developer your skills with thousands of expert-led courses acroos hundreds of topics</span>
+                                        </a>
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:#F7A616;">
+                                        
+                                    </td>
+                                    <td class="td-group4 table-border" style="color:#F7A616;">
+                                       
+                                    </td>
+                                    <td class="td-group4 table-border" style="width:180px;"><i style="color:white;font-size:24px;" class="fa fa-phone" aria-hidden="true"></i></td>
+                                    <td class="td-group4 table-border"  style="width:180px;"><i style="color:white;font-size:24px;" class="fa fa-phone" aria-hidden="true"></i></td>
+                                    <td class="td-group4"  style="width:180px;"><i style="color:white;font-size:24px;" class="fa fa-phone" aria-hidden="true"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="text-align:center;color:white;">
+                        <p style="font-size:17px;font-weight:bold;">
+                            Contact Sales
+                            <a href="#" >
+                                <i class='fas fa-angle-right' style="color:deeppink;padding:7px;"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="generic-block-sales">
+                <div class="generic-block-sales_wrapper">
+                    <h2>Gift Pluralsight Skills</h2>
+                    <p>The gift that keeps on giving (all career long).</p>
+                    <div class="button-ps"><a href="#" style="color:white;"><strong>GIFT NOW</strong></a></div>
+                </div>
+            </div>
+            <div class="generic-block-qns" >
+                <div class="parallax-block" style="padding-bottom:90px;">
+                    <div style="padding-left:10px;">
+                        <h5 style="color:DeepPink;font-weight:bold;">KNOW WHAT YOU'RE GETTING</h5>
+                        <h1 style="color:white;font-weight:bold;">A few frequently asked <br> questions</h1>
+                    </div>
+                    <div>
+                        <div class="parallax-block-qns">
+                            <div class="display-grid" style="cursor:pointer;">
+                                <div>Will I be charged now for free trial?</div>
+                                <div ><i class='fas fa-angle-down' style="color:white;padding:7px;" id='icon2' onclick="show1()"></i><i class='fas fa-angle-up' id="icon1" style="color:white;padding:7px;" onclick="hide1()"></i></div>
+                            </div>
+                            <div id="box1" class="display-grid-text">
+                                <p>No, we won't charge you at this time. However, there is a $1 USD hold that is immediately released. You may see a charge of $1 on your account, but it will be reversed. After your trial ends, we'll use this information to create your account, so you can continue to build new skills with uninterrupted access to our platform.</p>
+                            </div>
+                        </div>
+                        <div class="parallax-block-qns">
+                            <div class="display-grid"  style="cursor:pointer;">
+                                <div>How does a Pluralsight subscription work?</div>
+                                <div ><i class='fas fa-angle-down' style="color:white;padding:7px;" id='icon2-1' onclick="show2()"></i><i class='fas fa-angle-up' id="icon1-1" style="color:white;padding:7px;" onclick="hide2()"></i></div>
+                            </div>
+                            <div id="box2" class="display-grid-text">
+                                <p>It's simple. When you sign up, you'll immediately have unlimited viewing of thousands of expert courses, paths to guide your learning, tools to measure your skills and hands-on resources like exercise files. There’s no limit on what you can learn and you can cancel at any time.</p>
+                            </div>
+                        </div>
+                        <div class="parallax-block-qns">
+                            <div class="display-grid" style="cursor:pointer;">
+                                <div>Can I cancel anytime?</div>
+                                <div ><i class='fas fa-angle-down' style="color:white;padding:7px;" id='icon2-2' onclick="show3()"></i><i class='fas fa-angle-up' id="icon1-2" style="color:white;padding:7px;" onclick="hide3()"></i></div>
+                            </div>
+                            <div id="box3" class="display-grid-text">
+                                <p>Yes, you can cancel your subscription at any time. Your subscription will auto-renew until you cancel, but why would you want to?</p>
+                            </div>
+                        </div>
+                        <div class="parallax-block-qns">
+                            <div class="display-grid" style="cursor:pointer;">
+                                <div>What are Pluralsight business</div>
+                                <div ><i class='fas fa-angle-down' style="color:white;padding:7px;" id='icon2-3' onclick="show4()"></i><i class='fas fa-angle-up' id="icon1-3" style="color:white;padding:7px;" onclick="hide4()"></i></div>
+                            </div>
+                            <div id="box4" class="display-grid-text">
+                                <p>Businesses of all sizes - from small shops to large enterprises - purchase these plans, with other tools to effectively grow and measure skills and track progress. In addition to all the features that come with personal plans, business plans include easy group management, in-depth reporting on usage and skills growth, SSO and more.</p>
+                            </div>
+                        </div>
+                        <div class="parallax-block-qns" style="border:none;">
+                            <div class="display-grid" style="cursor:pointer;">
+                                <div>How long is my personal free trial</div>
+                                <div ><i class='fas fa-angle-down' style="color:white;padding:7px;" id='icon2-4' onclick="show5()"></i><i class='fas fa-angle-up' id="icon1-4" style="color:white;padding:7px;" onclick="hide5()"></i></div>
+                            </div>
+                            <div id="box5" class="display-grid-text">
+                                <p>When you sign up for a personal trial, you will receive 10 days and 200 minutes of viewing. If your trial is not canceled within the 10 days, the trial will convert to a paid subscription that will auto-renew until the subscription is canceled.<a href="">Click here for more information on our trial.</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonal-section">
+                <div class="testimonal-section-text">
+                    <h1>What our users are saying</h1>
+                </div>
+                <div class="testimonal-area">
+                    <div class="icons-arrow">
+                        <i class='fas fa-angle-left' style='color:white;font-size:90px;' class="angle-arrow" onclick="displayTestimonal()"></i>
+                    </div>
+                    <div class="testimonal">
+                        <div id="show">
+                            <div class="testimonal-part-1">
+                                <div>
+                                    <img src="https://i.ibb.co/WFXyKZf/testimonal1.png" alt="testimonal1">
+                                </div>
+                                <div>
+                                    <img src="https://i.ibb.co/kxbqJHG/testimonal2.png" alt="testimonal2">
+                                </div>
+                                <div>
+                                    <img src="https://i.ibb.co/zVq2TLb/testimonal3.png" alt="testimonal3">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="hide">
+                            <div class="testimonal-part-2">
+                                <div>
+                                    <img src="https://i.ibb.co/mRh8TkV/testimonal6.png" alt="testimonal1">
+                                </div>
+                                <div>
+                                    <img src="https://i.ibb.co/kxbqJHG/testimonal2.png" alt="testimonal2">
+                                </div>
+                                <div>
+                                    <img src="https://i.ibb.co/K9sWmLM/testimonal5.png" alt="testimonal3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icons-arrow">
+                        <i class='fas fa-angle-right' style='color:white;font-size:90px' onclick="displayTestimonal()"></i>
+                    </div>
+                </div>
+                <div>
+                    <div id="title2">
+                        <h5 class="title-gray">HELPING THOUSANDS OF ORGANIZATION BUILS TECH SKILLS AT SCALE</h5>
+                    </div>
+                    <div class="flex-block-container">
+                        <div><img src="https://i.ibb.co/bWR5Y56/adp.png" alt="adp"></div>
+                        <div><img style="padding-top:10px;" src="https://i.ibb.co/d4f3LNJ/adobe.png" alt="adobe"></div>
+                        <div><img style="padding-top:10px;" src="https://i.ibb.co/99nGsFh/vmware.png" alt="vmware"></div>
+                        <div><img src="https://i.ibb.co/Lnh08Yv/fujitsu.png" alt="fujitsu"></div>
+                        <div><img style="padding-top:10px;" src="https://i.ibb.co/1ZWfKxG/nasdaq.png" alt="nasdaq"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar">
+                <div class="footer-links-area">
+                    <ul class="footer-links-area-parsys">
+                       <li class="footer-links-group">
+                            <div>
+                                <h4 class="group-label">Solutions</h4>
+                                <ul class="footer-link-group-parsys">
+                                    <li><a href="#">Pluralsight Skills</a></li>
+                                    <li><a href="#">Pluralsight Flow</a></li>
+                                    <li><a href="#">Government</a></li>
+                                    <li><a href="#">Gift of Pluralsight</a></li>
+                                    <li><a href="#">View Pricing</a></li>
+                                    <li><a href="#">Contact Sales</a></li>
+                                    <li><a href="#">Skill up for free</a></li>
+                                </ul>
+                            </div>
+                       </li>
+                       <li class="footer-links-group">
+                        <div>
+                            <h4 class="group-label">Solutions</h4>
+                            <ul class="footer-link-group-parsys">
+                                <li><a href="#">Browse library</a></li>
+                                <li><a href="#">Role IQ</a></li>
+                                <li><a href="#">Skill IQ</a></li>
+                                <li><a href="#">Iris</a></li>
+                                <li><a href="#">Authors</a></li>
+                                <li><a href="#">Professional Services</a></li>
+                            </ul>
+                        </div>
+                       </li>
+                       <li class="footer-links-group">
+                        <div>
+                            <h4 class="group-label">Solutions</h4>
+                            <ul class="footer-link-group-parsys">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Customers stories</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Blogs</a></li>
+                                <li><a href="#">Newsroom</a></li>
+                                <li><a href="#">Resource Center</a></li>
+                                <li><a href="#">Guides</a></li>
+                            </ul>
+                        </div>
+                       </li>
+                       <li class="footer-links-group">
+                        <div>
+                            <h4 class="group-label">Solutions</h4>
+                            <ul class="footer-link-group-parsys">
+                                <li><a href="#">Download Pluralsight</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Teach</a></li>
+                                <li><a href="#">Partners</a></li>
+                                <li><a href="#">Affiliate Partners</a></li>
+                                <li><a href="#">PluralsightOne.org</a></li>
+                                <li><a href="#">Subscribe</a></li>
+                            </ul>
+                        </div>
+                       </li>
+                       <li class="footer-links-group">
+                        <div>
+                            <h4 class="group-label">Solutions</h4>
+                            <ul class="footer-link-group-parsys">
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Help center</a></li>
+                                <li><a href="#">Government</a></li>
+                                <li><a href="#">IP allowlist</a></li>
+                                <li><a href="#">Sidemap</a></li>
+                            </ul>
+                        </div>
+                       </li>
+                    </ul>
+                </div>
+                <div class="footer-text-selector">
+                    <img src="https://i.ibb.co/V97WkXr/globe-white.png" alt="globe-white" class="image3">
+                    <ul class="languages">
+                        <li><a>Deutsch</a></li>
+                        <li><a style="color:white;">English</a></li>
+                        <li><a>French</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-last-section">
+                    <div style="display:flex;flex-direction:row;">
+                        <img src="https://i.ibb.co/1zxdTWH/ps-icon.png" alt="ps-icon" style="width:35px;height:35px;">
+                        <p style="color:white;margin-left:10px;font-size:12px">Copyright &nbsp; 2004-2022 Pluralsight LLC. All rights<br/> reserved.</p>
+                    </div>
+                    <div class="navbar-help-text">Terms of use</div>
+                    <div class="navbar-help-text">Privacy Notice</div>
+                    <div class="navbar-help-text">Modern Slavery Act Transparency Statement</div>
+                    <div class="icon-section">
+                        <div><i class="fa fa-facebook"></i></div>
+                        <div><i class="fa fa-instagram"></i></div>
+                        <div><i class="fa fa-twitter"></i></div>
+                        <div><i class='fab fa-linkedin-in'></i></div>
+                        <div><i class="fa fa-youtube"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../script/viewPlans.js"></script>

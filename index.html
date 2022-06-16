@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Pluralsight | The Tech Workforce Development Company</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div>
+        <div id="navbar">
+            <div class="ps-nav-brand">
+                <a href="index.html" class="ps-nav-logo"></a>
+            </div>
+            <div class="ps-nav-global-links">
+                <ul class="ps-nav-global-main">
+                    <li class="primary-link" onclick="showPlatforms()" ondblclick="closeShowPlatforms()">
+                        <a href="#" id="show-nav-1">Platforms<span><i class='fas fa-angle-down' id="showNav1" style='color:white;'></i></span></a>
+                        <div class="header-dropdown" id="showNav">
+                            <div class="close-button" ondblclick="closeShowPlatforms()">X</div>
+                            <div class="nav-browse-container">
+                                <div class="nav-browse-inner" style="width:300px;">
+                                    <div class="nav-browse-section">
+                                        <div class="nav-header--label">Ways to upskill</div>
+                                        <ul class="browse-primary">
+                                            <li>
+                                                <a href="#">
+                                                    <span><img src="https://i.ibb.co/M1SXJWP/dashboard.png" alt="dashboard"></span> Course
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span><img src="https://i.ibb.co/1sz0tBJ/iq.png" alt="iq"></span> Labs
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span><img src="https://i.ibb.co/c1N4TQj/cloud.png" alt="cloud"></span> Certification prep
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span><img src="https://i.ibb.co/pnzxPkz/hand.png" alt="hand"></span> Hands-on learning
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span><img src="https://i.ibb.co/wSqvsYq/certifications.png" alt="certifications"></span> Certification prep
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span><img src="https://i.ibb.co/Vq6Lk5r/analytics.png" alt="analytics"></span> Team efficiency
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="nav-browse-inner" style="padding:20px;padding-top:40px;">
+                                    <div class="nav-header-section" style="margin-right:20px;">
+                                        <div class="nav-header--label">Skills For</div>
+                                        <ul class="browse-secondary browse-primary">
+                                            <li><a href="#">Software developer</a></li>
+                                            <li><a href="#">IT ops</a></li>
+                                            <li><a>Info & cyber security</a></li>
+                                            <li><a href='#'>Cloud computing</a></li>
+                                            <li><a href='#'>Machine learning /AI</a></li>
+                                            <li><a href='#'>Data professional</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-header-section" style="height:213px;width:500px">
+                                        <div class="nav-header--label">Top Trending Paths</div>
+                                        <div id="pathContent" class="clearfix">
+                                            <div id="path-list-target">
+                                                <div class="path-list-page">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <div class="item-each">
+                                                                <div class="item-image">
+                                                                    <img src="https://pluralsight2.imgix.net/paths/images/group-policy-administration-ee0dacafe8.png?w=75">
+                                                                </div>
+                                                                <div class="item-text">
+                                                                    <div class="course-item__title">
+                                                                        Microsfot Azure Development
+                                                                    </div>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span>4 </span>Courses
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>7 </span>Hourse
+                                                                        </li>
+                                                                        <li>
+                                                                            <img src="https://i.ibb.co/1sz0tBJ/iq.png" alt="iq">
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <div class="item-each">
+                                                                <div class="item-image">
+                                                                    <img src="https://pluralsight2.imgix.net/paths/images/group-policy-administration-ee0dacafe8.png?w=75">
+                                                                </div>
+                                                                <div class="item-text">
+                                                                    <div class="course-item__title">
+                                                                        Microsfot Azure Development
+                                                                    </div>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span>4 </span>Courses
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>7 </span>Hourse
+                                                                        </li>
+                                                                        <li>
+                                                                            <img src="https://i.ibb.co/1sz0tBJ/iq.png" alt="iq">
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <div class="item-each">
+                                                                <div class="item-image">
+                                                                    <img src="https://pluralsight2.imgix.net/paths/images/group-policy-administration-ee0dacafe8.png?w=75">
+                                                                </div>
+                                                                <div class="item-text">
+                                                                    <div class="course-item__title">
+                                                                        Microsfot Azure Development
+                                                                    </div>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span>4 </span>Courses
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>7 </span>Hourse
+                                                                        </li>
+                                                                        <li>
+                                                                            <img src="https://i.ibb.co/1sz0tBJ/iq.png" alt="iq">
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <div class="item-each">
+                                                                <div class="item-image">
+                                                                    <img src="https://pluralsight2.imgix.net/paths/images/group-policy-administration-ee0dacafe8.png?w=75">
+                                                                </div>
+                                                                <div class="item-text">
+                                                                    <div class="course-item__title">
+                                                                        Microsfot Azure Development
+                                                                    </div>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span>4 </span>Courses
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>7 </span>Hourse
+                                                                        </li>
+                                                                        <li>
+                                                                            <img src="https://i.ibb.co/1sz0tBJ/iq.png" alt="iq">
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <div class="item-each">
+                                                                <div class="item-image">
+                                                                    <img src="https://pluralsight2.imgix.net/paths/images/group-policy-administration-ee0dacafe8.png?w=75">
+                                                                </div>
+                                                                <div class="item-text">
+                                                                    <div class="course-item__title">
+                                                                        Microsfot Azure Development
+                                                                    </div>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span>4 </span>Courses
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>7 </span>Hourse
+                                                                        </li>
+                                                                        <li>
+                                                                            <img src="https://i.ibb.co/1sz0tBJ/iq.png" alt="iq">
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="primary-link" onclick="showProduct()" ondblclick="hideProduct()">
+                        <a href="#">Products<span> <i class='fas fa-angle-down' style='color:white'></i></span></a>
+                        <div class="header-dropdown" style="width:576px;height:232px;" id="showProduct">
+                            <div class="nav-products-container">
+                                <div class="close-button" ondblclick="hideProduct()">X</div>
+                                <div class="nav-product-list">
+                                    <div class="nav-product">
+                                        <div class="nav-product-inner" style="padding-right:20px;border-right:1px solid #363638">
+                                            <div class="product-link">
+                                                <a href="#">
+                                                  <img src="https://i.ibb.co/QKZYWTg/logo-skills.png" alt="logo-skills">
+                                                </a>
+                                                <p>Build tech skills to drive results</p>
+                                            </div>
+                                            <hr class="nav-product-hr">
+                                            <ul class="nav-product-link-list">
+                                                <li class="nav-product-link-item">
+                                                    <a href="#">What is skills?</a>
+                                                </li>
+                                                <li class="nav-product-link-item">
+                                                    <a href="#">View plans</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="nav-product">
+                                        <div class="nav-product-inner" style="padding-left:20px;">
+                                            <div class="product-link">
+                                                <a href="#">
+                                                    <img src="https://i.ibb.co/RPpYf1T/logo-flow.png" alt="logo-flow">
+                                                </a>
+                                                <p>Get insights into your workflow</p>
+                                            </div>
+                                            <hr class="nav-product-hr">
+                                            <ul class="nav-product-link-list">
+                                                <li class="nav-product-link-item">
+                                                    <a href="#">What is Flow?</a>
+                                                </li>
+                                                <li class="nav-product-link-item">
+                                                    <a href="#">View plans</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="primary-link" onclick="showResource()" ondblclick="hideResource()">
+                        <a href="#">Resources<span> <i class='fas fa-angle-down' style='color:white'></i></span></a>
+                        <div class="header-dropdown" id="Resources">
+                            <div class="close-button" ondblclick="hideResource()">X</div>
+                            <div class="nav-resource-container">
+                                <div class="nav-resource-inner">
+                                    <div class="nav-resource-section"  style="padding-right:30px;">
+                                        <div class="nav-header--label">LEARN</div>
+                                        <ul class="resource-primary">
+                                           <li><a href='#'>Blog</a></li>
+                                           <li><a href='#'>Customer stories</a></li>
+                                           <li><a href='#'>Resource center</a></li>
+                                           <li><a href='#'>Guides</a></li>
+                                           <li><a href='#'>App download</a></li>
+                                           <li><a href='#'>Support</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-resource-section">
+                                        <div class="nav-header--label">CONNECT</div>
+                                        <ul class="resource-secondary">
+                                            <li style="padding-top:5px;">
+                                                <a href="#">Events</a>
+                                            </li>
+                                            <li style="padding-top:5px;">
+                                                <a href="#">Webinars</a>
+                                            </li>
+                                            <li style="padding-top:5px;">
+                                                <a href="#">Podcast</a>
+                                            </li>
+                                        </ul>
+                                        <div class="nav-header--label" style="padding-top:20px;">PODCAST</div>
+                                        <ul class="resource-secondary">
+                                            <li style="padding-top:5px;"><a href="#">All hands on tech</a></li>
+                                            <li style="padding-top:5px;"><a href='#'>Perspectives in Leadership</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="nav-resource-inner" id='resource-nav'>
+                                    <div class="generic-block-wrapper-image" style="padding-left:20px;">
+                                        <div class="heading">
+                                            <h2>2022 Tech<br> Forecast and<br>
+                                            Build Better<br> Blueprint
+                                            </h2>
+                                        </div>
+                                        <div class="paragraph">
+                                            Prepare for shifts and<br> trends in the industry
+                                        </div>
+                                        <div class="Button-pre">
+                                            <a href="#">CHECK IT OUT</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="primary-link">
+                        <a href="#">For Individuals<span></span></a>
+                    </li>
+                </ul>
+                <ul class="ps-nav-global-util" >
+                    <li class="ps-nav-button" style="border:1px solid white;width:140px;height:40px;padding-left:10px;padding-top:3px;box-sizing:border-box;">
+                        <a href="#" class="button-secondary-white">Try for free</a>
+                    </li>
+                    <li class="ps-nav-search">
+                        <a href="#" class="ps-nav-primary">
+                            <i class="fa fa-search" style="color:white;font-size:24px;"></i>
+                        </a>
+                    </li>
+                    <li class="ps-nav-contact">
+                        <a href="#">
+                            <i class="fa fa-phone" style="color:white;font-size:24px;"></i>
+                        </a>
+                    </li>
+                    <li></li>
+                    <!-- sign section -->
+                    <li class="primary-link" onmouseover="showSign()">
+                        <a href="index.html" class="ps-nav-signIn">
+                            Sign in
+                            <span><i class='fas fa-angle-down' style='color:white;'></i></span>
+                            <div class="signIn-dropdown" id="signIn">
+                                <div class="nav-sign section">
+                                    <div class="close-button">X</div>
+                                    <div class="nav-signin-list">
+                                        <div class="nav-signin-item" style="margin-top:-30px;margin-left:-40px;">
+                                            <div class="nav-header--label">SIGN IN WITH</div>
+                                            <a href="signIn.html"></a>
+                                            <img style="height:21px" src="https://i.ibb.co/QKZYWTg/logo-skills.png" alt="logo-skills">
+                                        </div>
+                                  
+                                        <div class="nav-signin-item">
+                                            <div class="nav-header--label">SIGN IN WITH</div>
+                                            <img style="height:21px" src="https://i.ibb.co/RPpYf1T/logo-flow.png" alt="logo-skills">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero-background padding-top-hundred">
+            <div class="text-scroller-component">
+                <h1>
+                    Build better <div class="text-fader">
+                        <div id='teams'> teams</div>
+                    </div>
+                </h1>
+            </div>
+            <div class="cmp-text">
+                <p>Face the future with confidence--and with the skills tools to thrive.</p>
+            </div>
+            <div class="space">
+                <div class="spacer" style="height:10px;"></div>
+            </div>
+            <div class="column-control-narrow">
+                <div class="view_plans">
+                    <div class="psbutton-right" >
+                        <a href="viewPlans.html">View Plans</a>
+                    </div>
+                </div>
+                <div class="try_for_free">
+                    <div class="psbutton-left">
+                        <a href="#">Try for free</a>
+                    </div>
+                </div>
+            </div>
+            <div id="title2">
+                <h5 class="title-gray">HELPING THOUSANDS OF ORGANIZATION BUILS TECH SKILLS AT SCALE</h5>
+            </div>
+            <div class="flex-block-container">
+                <div><img src="https://i.ibb.co/bWR5Y56/adp.png" alt="adp"></div>
+                <div><img style="padding-top:10px;" src="https://i.ibb.co/d4f3LNJ/adobe.png" alt="adobe"></div>
+                <div><img style="padding-top:10px;" src="https://i.ibb.co/99nGsFh/vmware.png" alt="vmware"></div>
+                <div><img src="https://i.ibb.co/Lnh08Yv/fujitsu.png" alt="fujitsu"></div>
+                <div><img style="padding-top:10px;" src="https://i.ibb.co/1ZWfKxG/nasdaq.png" alt="nasdaq"></div>
+            </div>
+        </div>
+        <div class="free-form-component">
+            <div style="background-color:#000;">
+                <div class="journey-line"></div>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="main-clearfix">
+                <div class="title-techno">
+                    <p>TRENDING TECHNOLOGIES</p>
+                    <h2>Popular topics to learn now</h2>
+                </div>
+                <div class="techno-lng">
+                    <div class="techno-lng-icon">
+                        <div>
+                           <div class="path-label">Path</div>
+                           <div class="path-title">JavaScript</div>
+                           <div class="path-courses"><span>11</span> Courses</div>
+                           <div class="path-link"><a href="#">Take a look <i class='fas fa-angle-right' style='color:DeepPink'></i></a> </div>
+                        </div>
+                        <div class="path-icon">
+                            <img src="https://pluralsight2.imgix.net/paths/images/javascript-542e10ea6e.png" alt="javascript">
+                        </div>
+                    </div>
+                    <div class="techno-lng-icon">
+                        <div>
+                            <div class="path-label">Path</div>
+                            <div class="path-title">Angular</div>
+                            <div class="path-courses"><span>14</span> Courses</div>
+                            <div class="path-link"><a href="#">Take a look <i class='fas fa-angle-right' style='color:DeepPink'></i></a> </div>
+                         </div>
+                         <div class="path-icon">
+                            <img src="https://pluralsight.imgix.net/paths/path-icons/angular-14a0f6532f.png" alt="javascript">
+                        </div>
+                    </div>
+                    <div class="techno-lng-icon">
+                        <div>
+                            <div class="path-label">Path</div>
+                            <div class="path-title">Core Python</div>
+                            <div class="path-courses"><span>12</span> Courses</div>
+                            <div class="path-link"><a href="#">Take a look <i class='fas fa-angle-right' style='color:DeepPink'></i></a> </div>
+                         </div>
+                         <div class="path-icon">
+                            <img src="https://pluralsight.imgix.net/paths/python-7be70baaac.png" alt="javascript">
+                        </div>
+                    </div>
+                    <div class="techno-lng-icon">
+                        <div>
+                            <div class="path-label">Path</div>
+                            <div class="path-title">C#</div>
+                            <div class="path-courses"><span>19</span> Courses</div>
+                            <div class="path-link"><a href="#">Take a look <i class='fas fa-angle-right' style='color:DeepPink'></i></a> </div>
+                         </div>
+                         <div class="path-icon">
+                            <img src="https://pluralsight.imgix.net/paths/path-icons/csharp-e7b8fcd4ce.png?" alt="javascript">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="generic-block">
+            <div class="generic-block-wrapper">
+                <h5>SEE WHAT'S NEW</h5>
+                <h1>Our latest features</h1>
+            </div>
+            <div class="generic-block-section">
+                <div>
+                    <div class="content">
+                        <div class="image-text">
+                            <img src="https://i.ibb.co/bgnLdLC/logo-skills.png">
+                        </div>
+                        <div class="text2">LABS</div>
+                    </div>
+                    <div class="title3">
+                        <h1>
+                        Deepen your people's expertise with hands-on labs
+                        </h1>
+                    </div>
+                    <div class="text4">
+                        <p>Improve your teams’ confidence in their ability to deliver on business objectives by building the right skills that meet your org’s needs. Pluralsight offers 950+ labs that enable hands-on practice in secure environments across domains such as cloud (AWS, GCP and Azure), IT Ops, security, data and software development.
+
+                        </p>
+                    </div>
+                    <div class="link-section">
+                        <a href="#">Learn more <i class='fas fa-angle-right' style='color:DeepPink;'></i></a>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://i.ibb.co/Gvr65Rs/Cloud-labs-image2x-min.png" alt="Cloud-labs-image2x-min">
+                </div>
+            </div>
+        </div>
+        <div class="generic-block-section-1">
+            <div class="generic-block-part">
+                <div class="generic-image"> 
+                    <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/certification-prep.png">
+                    <h2>
+                        Empower your teams to grow their skills and their careers
+                    </h2>
+                    <p>Prepare your team for certification exams with our expert authored content and practice exams.</p>
+                    <div class="link-section">
+                        <a href="#" style="margin-top:25px;">Learn more <i class='fas fa-angle-right' style='color:DeepPink;'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="generic-block-part">
+                <div class="generic-image"> 
+                    <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/delivery-module.png">
+                    <h2>
+                        workflow improvements with insights from your Jira data
+                    </h2>
+                    <p>Go beyond Jira data and get visibility into what’s happening within your user stories, tasks and bugs. Flow’s delivery module helps you better understand how your team is working and can make lasting improvements to your workflow.</p>
+                    <div class="link-section">
+                        <a href="#" style="margin-top:25px;">Learn more <i class='fas fa-angle-right' style='color:DeepPink;'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="generic-block-part">
+                <div class="generic-image"> 
+                    <img src="	https://www.pluralsight.com/content/dam/pluralsight2/homepage/sandboxes.png">
+                    <h2>
+                        Utilize a space for unrestricted exploration
+                    </h2>
+                    <p>Sandboxes gives your team a safe environment to practice what they're learning from expert-authored courses.</p>
+                    <div class="link-section">
+                        <a href="#" style="margin-top:25px;">Learn more <i class='fas fa-angle-right' style='color:DeepPink;'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="padding:20px;">
+            <div class="generic-block-wrapper">
+                <h5>SEE WHAT'S NEW</h5>
+                <h1 style="color:white;">Our latest features</h1>
+            </div>
+            <div class="generic-block-section-1" style="background-color:transparent; height:450px;">
+                <div class="discover-pluralsight">
+                    <img src="https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/generic_block_135160/parsys/columns/column-parsys-1/flex_block/parsys/flex_open_block_copy/parsys/image/image-res.img.7ff160d9-5248-4b11-804e-cf66f7281f75.jpg">
+                    <h5>WHAT IS PLURALSIGHT SKILLS</h5>
+                    <p style="font-size:17px;color:white;margin-top:25px;">Discover the fastest, most effective path to developing technology skills</p>
+                </div>
+                <div class="discover-pluralsight">
+                    <img src="https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/generic_block_135160/parsys/columns/column-parsys-1/flex_block/parsys/flex_open_block_copy_1875049544/parsys/image/image-res.img.50c64034-5c04-4b3b-aa76-4d2ce92c35cc.png">
+                    <h5>PLURALSIGHT NAMED A LEADER FOR IT TRAINING</h5>
+                    <p style="font-size:17px;color:white;margin-top:25px;">
+                        We're honored to be recognized in the 2021 IDC MarketScape for IT training.</p>
+                </div>
+                <div class="discover-pluralsight">
+                    <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/flow-demo-thumbnail.png">
+                    <h5>LEARN HOW TO DE-FRICTION YOUR SOFTWARE DEVELOPMENT WORKFLOW WITH FLOW
+                    </h5>
+                    <p style="font-size:17px;color:white;margin-top:25px;">Take a guided tour through Pluralsight Flow to see how visibility can take your team to the next level</p>
+                </div>
+                <div class="discover-pluralsight">
+                    <img src="https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/generic_block_135160/parsys/columns/column-parsys-1/flex_block/parsys/flex_open_block_copy_383891725/parsys/image/image-res.img.52e3fa3f-a6b2-4942-bee6-bdf060c01de7.png">
+                    <h5>CREATE YOUR FREE ACCOUNT</h5>
+                    <p style="font-size:17px;color:white;margin-top:25px;">Build new tech skills on us with free access to 50+ expert-led courses, assessments and more.</p>
+                </div>
+            </div>
+        </div>
+        <div class="pluralsight-story-content">
+            <div class="pluralsight-story-content-text">
+                <div>
+                    <h4>My PluralSight Story</h4>
+                </div>
+            </div>
+            <div class="pluralsight-story-image">
+                <div>
+                    <img src="https://i.ibb.co/CsjsCnW/soldier.png" alt="soldier">
+                    <div class="content-2">
+                        <p>
+                            Ryan Chasteauneuf had always dreamed of being a soldier. After disaster struck in Afghanistan, he was forced to abandon his lifelong dream and start over. Driven to achieve in the face of adversity, he turned to Pluralsight to upskill.
+                        </p>
+                    </div>
+                    <div class="pluralsight-button">
+                        <div>
+                            <a href="#">SEE RYAN'S STORY</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="testimonal-section">
+            <div class="testimonal-section-text">
+                <h4>Follow Us</h4>
+                <h2>Share Your Skills</h2>
+            </div>
+            <div class="testimonal-area">
+                <div class="icons-arrow">
+                    <i class='fas fa-angle-left' style='color:white;font-size:90px;' class="angle-arrow" onclick="displayTestimonal()"></i>
+                </div>
+                <div class="testimonal">
+                    <div id="show">
+                        <div class="testimonal-part-1">
+                            <div>
+                                <img src="https://i.ibb.co/WFXyKZf/testimonal1.png" alt="testimonal1">
+                            </div>
+                            <div>
+                                <img src="https://i.ibb.co/kxbqJHG/testimonal2.png" alt="testimonal2">
+                            </div>
+                            <div>
+                                <img src="https://i.ibb.co/zVq2TLb/testimonal3.png" alt="testimonal3">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="hide">
+                        <div class="testimonal-part-2">
+                            <div>
+                                <img src="https://i.ibb.co/mRh8TkV/testimonal6.png" alt="testimonal1">
+                            </div>
+                            <div>
+                                <img src="https://i.ibb.co/kxbqJHG/testimonal2.png" alt="testimonal2">
+                            </div>
+                            <div>
+                                <img src="https://i.ibb.co/K9sWmLM/testimonal5.png" alt="testimonal3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="icons-arrow">
+                    <i class='fas fa-angle-right' style='color:white;font-size:90px' onclick="displayTestimonal()"></i>
+                </div>
+            </div>
+        </div>
+        <div class="growth-pluralsight">
+            <div>
+                <img src="https://i.ibb.co/590TSsv/img2-1-1.png">
+            </div>
+            <div class="content-3">
+                <h2>See our growth, progress and evolution</h2>
+            </div>
+            <div class="content-text-1">
+                <p>At Pluralsight, we see first-hand every day how technology makes the impossible, possible. It’s why Pluralsight One exists: To advance our mission of democratizing technology skills, challenging assumptions about solutions and create significant, lasting social impact.</p>
+            </div>
+            <div class="pluralsight-growth">
+                <a href="#">FOR NONPROFITS</a>
+            </div>
+        </div>
+        <div class="try-for-free-bottom">
+            <div class="edge-try">
+                <h2>Insights that give you an edge </h2>
+            </div>
+            <div class="button-1-try">
+                <a href="#">Try for free</a>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="footer-links-area">
+                <ul class="footer-links-area-parsys">
+                   <li class="footer-links-group">
+                        <div>
+                            <h4 class="group-label">Solutions</h4>
+                            <ul class="footer-link-group-parsys">
+                                <li><a href="#">Pluralsight Skills</a></li>
+                                <li><a href="#">Pluralsight Flow</a></li>
+                                <li><a href="#">Government</a></li>
+                                <li><a href="#">Gift of Pluralsight</a></li>
+                                <li><a href="#">View Pricing</a></li>
+                                <li><a href="#">Contact Sales</a></li>
+                                <li><a href="#">Skill up for free</a></li>
+                            </ul>
+                        </div>
+                   </li>
+                   <li class="footer-links-group">
+                    <div>
+                        <h4 class="group-label">Solutions</h4>
+                        <ul class="footer-link-group-parsys">
+                            <li><a href="#">Browse library</a></li>
+                            <li><a href="#">Role IQ</a></li>
+                            <li><a href="#">Skill IQ</a></li>
+                            <li><a href="#">Iris</a></li>
+                            <li><a href="#">Authors</a></li>
+                            <li><a href="#">Professional Services</a></li>
+                        </ul>
+                    </div>
+                   </li>
+                   <li class="footer-links-group">
+                    <div>
+                        <h4 class="group-label">Solutions</h4>
+                        <ul class="footer-link-group-parsys">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Customers stories</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Newsroom</a></li>
+                            <li><a href="#">Resource Center</a></li>
+                            <li><a href="#">Guides</a></li>
+                        </ul>
+                    </div>
+                   </li>
+                   <li class="footer-links-group">
+                    <div>
+                        <h4 class="group-label">Solutions</h4>
+                        <ul class="footer-link-group-parsys">
+                            <li><a href="#">Download Pluralsight</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Teach</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">Affiliate Partners</a></li>
+                            <li><a href="#">PluralsightOne.org</a></li>
+                            <li><a href="#">Subscribe</a></li>
+                        </ul>
+                    </div>
+                   </li>
+                   <li class="footer-links-group">
+                    <div>
+                        <h4 class="group-label">Solutions</h4>
+                        <ul class="footer-link-group-parsys">
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Help center</a></li>
+                            <li><a href="#">Government</a></li>
+                            <li><a href="#">IP allowlist</a></li>
+                            <li><a href="#">Sidemap</a></li>
+                        </ul>
+                    </div>
+                   </li>
+                </ul>
+            </div>
+            <div class="footer-text-selector">
+                <img src="https://i.ibb.co/V97WkXr/globe-white.png" alt="globe-white" class="image3">
+                <ul class="languages">
+                    <li><a>Deutsch</a></li>
+                    <li><a style="color:white;">English</a></li>
+                    <li><a>French</a></li>
+                </ul>
+            </div>
+            <div class="navbar-last-section">
+                <div style="display:flex;flex-direction:row;">
+                    <img src="https://i.ibb.co/1zxdTWH/ps-icon.png" alt="ps-icon" style="width:35px;height:35px;">
+                    <p style="color:white;margin-left:10px;font-size:12px">Copyright &nbsp; 2004-2022 Pluralsight LLC. All rights<br/> reserved.</p>
+                </div>
+                <div class="navbar-help-text">Terms of use</div>
+                <div class="navbar-help-text">Privacy Notice</div>
+                <div class="navbar-help-text">Modern Slavery Act Transparency Statement</div>
+                <div class="icon-section">
+                    <div><i class="fa fa-facebook"></i></div>
+                    <div><i class="fa fa-instagram"></i></div>
+                    <div><i class="fa fa-twitter"></i></div>
+                    <div><i class='fab fa-linkedin-in'></i></div>
+                    <div><i class="fa fa-youtube"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../script/script.js"></script>
+</html>
+<!-- 
+1 - 
+2 - 
+3 - 
+4 - 
+5 - 
+6 - <img src="https://i.ibb.co/Vq6Lk5r/analytics.png" alt="analytics">
+ -->
