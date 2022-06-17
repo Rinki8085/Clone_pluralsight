@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/media-query.css">
 </head>
 <body>
     <div>
@@ -20,7 +21,7 @@
                 <a href="index.html" class="ps-nav-logo"></a>
             </div>
             <div class="ps-nav-global-links">
-                <ul class="ps-nav-global-main">
+                <ul class="ps-nav-global-main"  id="navbar-section-12">
                     <li class="primary-link" onclick="showPlatforms()" ondblclick="closeShowPlatforms()">
                         <a href="#" id="show-nav-1">Platforms<span><i class='fas fa-angle-down' id="showNav1" style='color:white;'></i></span></a>
                         <div class="header-dropdown" id="showNav">
@@ -321,7 +322,7 @@
                     </li>
                 </ul>
                 <ul class="ps-nav-global-util" >
-                    <li class="ps-nav-button" style="border:1px solid white;width:140px;height:40px;padding-left:10px;padding-top:3px;box-sizing:border-box;">
+                    <li id='link-1' class="ps-nav-button" style="border:1px solid white;width:140px;height:40px;padding-left:10px;padding-top:3px;box-sizing:border-box;">
                         <a href="#" class="button-secondary-white">Try for free</a>
                     </li>
                     <li class="ps-nav-search">
@@ -329,7 +330,7 @@
                             <i class="fa fa-search" style="color:white;font-size:24px;"></i>
                         </a>
                     </li>
-                    <li class="ps-nav-contact">
+                    <li id='link-2' class="ps-nav-contact">
                         <a href="#">
                             <i class="fa fa-phone" style="color:white;font-size:24px;"></i>
                         </a>
@@ -533,7 +534,7 @@
                 <h5>SEE WHAT'S NEW</h5>
                 <h1 style="color:white;">Our latest features</h1>
             </div>
-            <div class="generic-block-section-1" style="background-color:transparent; height:450px;">
+            <div id="generic" class="generic-block-section-1" style="background-color:transparent; height:450px;">
                 <div class="discover-pluralsight">
                     <img src="https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/generic_block_135160/parsys/columns/column-parsys-1/flex_block/parsys/flex_open_block_copy/parsys/image/image-res.img.7ff160d9-5248-4b11-804e-cf66f7281f75.jpg">
                     <h5>WHAT IS PLURALSIGHT SKILLS</h5>
@@ -665,7 +666,7 @@
                    </li>
                    <li class="footer-links-group">
                     <div>
-                        <h4 class="group-label">Solutions</h4>
+                        <h4 class="group-label">Platform</h4>
                         <ul class="footer-link-group-parsys">
                             <li><a href="#">Browse library</a></li>
                             <li><a href="#">Role IQ</a></li>
@@ -678,7 +679,7 @@
                    </li>
                    <li class="footer-links-group">
                     <div>
-                        <h4 class="group-label">Solutions</h4>
+                        <h4 class="group-label">Company</h4>
                         <ul class="footer-link-group-parsys">
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Customers stories</a></li>
@@ -692,7 +693,7 @@
                    </li>
                    <li class="footer-links-group">
                     <div>
-                        <h4 class="group-label">Solutions</h4>
+                        <h4 class="group-label">Resources</h4>
                         <ul class="footer-link-group-parsys">
                             <li><a href="#">Download Pluralsight</a></li>
                             <li><a href="#">Events</a></li>
@@ -706,7 +707,7 @@
                    </li>
                    <li class="footer-links-group">
                     <div>
-                        <h4 class="group-label">Solutions</h4>
+                        <h4 class="group-label">Support</h4>
                         <ul class="footer-link-group-parsys">
                             <li><a href="#">Contact</a></li>
                             <li><a href="#">Help center</a></li>
