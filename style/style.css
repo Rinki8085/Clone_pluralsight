@@ -33,7 +33,7 @@
     height: 40px;
     background-image: url(../images_folder/PS_logo.png);
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: right center;
     background-size: 90% auto;
     position: relative;
     display: inline-block;
